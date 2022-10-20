@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 375px;
+    margin: 1em auto;
+    border-radius: 1em;
+    background-color: white;
+}
+
+.hero-img {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    height: 300px;
+    object-fit: cover;
+}
+
+.wrapper {
+    margin: 0 2em;
+    padding-bottom: 2em;
+}
+
+.pre-header {
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    margin-left: 0;
+    text-align: left;
+}
+
+.subtitle {
+    line-height: 1.5;
+    margin: 0;
+}
+
+.prices {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+}
+
+.offer {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+}
+
+.price {
+    margin-left: 1em;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.cart-btn {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    display: block;
+    border-radius: 1em;
+    padding: .7em 1.5em;
+    text-align: center;
+}
+
+.cart-img {
+    width: 14px;
+    height: 14px;
+}
+
+@media (min-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        width: 600px;
+        max-width: 1440px;
+        margin: 2em auto;
+    }
+
+    .hero-img {
+        height: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1em;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 2em 0;
+    }
+    
+    .cart-btn {
+        border-radius: .5em;
+    }
+
+    .title,
+    .offer {
+        font-size: 2.5em;
+    }
+
+    .pre-header,
+    .subtitle,
+    .price,
+    .cart-btn {
+        font-size: 1.2em;
+    }
+
+    .pre-header {
+        margin-bottom: 0;
+        font-size: 1.2em;
+    }
+}
+
+
+/* Styles from Frontend Mentor for the last line of the screen */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
